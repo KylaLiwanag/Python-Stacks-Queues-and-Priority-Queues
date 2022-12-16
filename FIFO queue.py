@@ -17,8 +17,5 @@ len(fifo)
 for element in fifo:
     print(element)
 
-
-
-
-
 len(fifo)
+

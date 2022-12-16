@@ -8,14 +8,11 @@ class Stack(Queue):
     for element in lifo:
         print(element)
 
-        lifo = []
+lifo = []
 
-        lifo.append("1st")
-        lifo.append("2nd")
-        lifo.append("3rd")
-
-        lifo.pop()
-
-        lifo.pop()
-
-        lifo.pop()
+lifo.append("1st")
+lifo.append("2nd")
+lifo.append("3rd")
+lifo.pop()
+lifo.pop()
+lifo.pop()
