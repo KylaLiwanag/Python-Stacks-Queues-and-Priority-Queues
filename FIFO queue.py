@@ -1,13 +1,24 @@
-# queues.py
+from queues import Queue
 
-from collections import deque
+fifo = Queue()
+fifo.enqueue("1st")
+fifo.enqueue("2nd")
+fifo.enqueue("3rd")
 
-class Queue:
-    def __init__(self):
-        self._elements = deque()
+fifo.dequeue()
 
-    def enqueue(self, element):
-        self._elements.append(element)
+fifo.dequeue()
 
-    def dequeue(self):
-        return self._elements.popleft()
+fifo.dequeue()
+
+fifo = Queue("1st", "2nd", "3rd")
+len(fifo)
+
+for element in fifo:
+    print(element)
+
+
+
+
+
+len(fifo)
